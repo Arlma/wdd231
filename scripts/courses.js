@@ -7,6 +7,9 @@ const courses = [
 
 const coursesContainer = document.querySelector("#courses");
 const totalCreditsEl = document.querySelector("#totalCredits");
+const filterAll = document.querySelector("#all");
+const filterWdd = document.querySelector("#wdd");
+const filterCse = document.querySelector("#cse");
 
 function displayCourses(courseList) {
   coursesContainer.innerHTML = "";
@@ -14,12 +17,14 @@ function displayCourses(courseList) {
   courseList.forEach(course => {
     const div = document.createElement("div");
     div.classList.add("course");
+    div.setAttribute('role', 'article');
+    div.setAttribute('aria-label', `${course.code} - ${course.name}`);
 
     if (course.completed) {
       div.classList.add("completed");
     }
 
-    div.innerHTML = `<strong>${course.code}</strong>: ${course.name} (${course.credits} credits)`;
+    div.innerHTML = `<strong>${course.code}</strong>: ${course.name} (<span class="credit">${course.credits}</span> credits)`;
     coursesContainer.appendChild(div);
   });
 
@@ -31,16 +36,28 @@ function displayCourses(courseList) {
   totalCreditsEl.textContent = totalCredits;
 }
 
+function setActiveFilter(button) {
+  [filterAll, filterWdd, filterCse].forEach(b => {
+    b.classList.remove('active-filter');
+    b.setAttribute('aria-pressed', 'false');
+  });
+  button.classList.add('active-filter');
+  button.setAttribute('aria-pressed', 'true');
+}
+
 // Filter Buttons
-document.querySelector("#all").addEventListener("click", () => {
+filterAll.addEventListener("click", () => {
+  setActiveFilter(filterAll);
   displayCourses(courses);
 });
 
-document.querySelector("#wdd").addEventListener("click", () => {
+filterWdd.addEventListener("click", () => {
+  setActiveFilter(filterWdd);
   displayCourses(courses.filter(course => course.code.startsWith("WDD")));
 });
 
-document.querySelector("#cse").addEventListener("click", () => {
+filterCse.addEventListener("click", () => {
+  setActiveFilter(filterCse);
   displayCourses(courses.filter(course => course.code.startsWith("CSE")));
 });
 
@@ -50,3 +67,4 @@ document.querySelector("#lastModified").textContent = document.lastModified;
 
 // Initial load
 displayCourses(courses);
+setActiveFilter(filterAll);

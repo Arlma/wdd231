@@ -9,21 +9,22 @@
   <script defer src="scripts/courses.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <h1>Maria Akumu</h1>
     <p>WDD 231: Web Frontend Development I</p>
   </header>
 
   <nav>
-    <ul class="navigation">
-      <li><a class="active" href="#">Home</a></li>
+    <ul class="navigation" role="navigation" aria-label="Main navigation">
+      <li><a class="active" aria-current="page" href="#">Home</a></li>
       <li><a href="#">Chamber Project</a></li>
       <li><a href="https://github.com/" target="_blank">GitHub</a></li>
       <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main id="main">
     <section>
       <h2>Course Overview</h2>
       <p>
@@ -35,16 +36,17 @@
     <section>
       <h2>Courses</h2>
 
-      <div class="filters">
-        <button id="all">All</button>
-        <button id="wdd">WDD</button>
-        <button id="cse">CSE</button>
+      <div class="filters" role="toolbar" aria-label="Course filters">
+        <button id="all" type="button" aria-pressed="false">All</button>
+        <button id="wdd" type="button" aria-pressed="false">WDD</button>
+        <button id="cse" type="button" aria-pressed="false">CSE</button>
       </div>
-
+      </div>
+      <div id="courses" aria-live="polite"></div>
       <div id="courses"></div>
-
       <p class="credits">
-        Total Credits: <span id="totalCredits">4</span>
+        Total Credits: <span id="totalCredits" aria-live="polite">0</span>
+      </p>
       </p>
     </section>
   </main>

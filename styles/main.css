@@ -88,6 +88,36 @@ footer {
   margin-top: 2rem;
 }
 
+/* Skip link (accessible) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Visible focus outlines for accessibility */
+a:focus, button:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.active-filter {
+  box-shadow: 0 0 0 3px rgba(30,58,138,0.12) inset;
+}
+
 /* Responsive Navigation */
 @media (max-width: 600px) {
   .navigation {
