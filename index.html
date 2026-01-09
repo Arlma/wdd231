@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 231 Course Home Page" />
-  <title>WDD 231 | Course Home</title>
-  <link rel="stylesheet" href="styles/main.css" />
-  <script defer src="scripts/courses.js"></script>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD 231 Course Home Page for Maria Akumu">
+  <meta name="author" content="Maria Akumu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Home</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/dates.js" defer></script>
+  <script src="js/courses.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header>
-    <h1>Maria Akumu</h1>
-    <p>WDD 231: Web Frontend Development I</p>
-  </header>
+<header>
+  <div class="header-content">
+    <img src="images/logo.png" alt="BYU-I Logo">
+    <span>Maria Akumu</span>
+    <button id="menu">&#9776;</button>
+  </div>
 
-  <nav>
-    <ul class="navigation" role="navigation" aria-label="Main navigation">
-      <li><a class="active" aria-current="page" href="#">Home</a></li>
-      <li><a href="#">Chamber Project</a></li>
-      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-    </ul>
+  <nav class="navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
   </nav>
+</header>
 
-  <main id="main">
-    <section>
-      <h2>Course Overview</h2>
-      <p>
-        This course focuses on planning, designing, and developing responsive
-        websites using modern web standards and best practices.
-      </p>
-    </section>
+<main>
+  <h1>Home</h1>
 
-    <section>
-      <h2>Courses</h2>
-
-      <div class="filters" role="toolbar" aria-label="Course filters">
-        <button id="all" type="button" aria-pressed="false">All</button>
-        <button id="wdd" type="button" aria-pressed="false">WDD</button>
-        <button id="cse" type="button" aria-pressed="false">CSE</button>
-      </div>
-      </div>
-      <div id="courses" aria-live="polite"></div>
-      <div id="courses"></div>
-      <p class="credits">
-        Total Credits: <span id="totalCredits" aria-live="polite">0</span>
-      </p>
-      </p>
-    </section>
-  </main>
-
-  <footer>
+  <section>
+    <h2>About Me</h2>
     <p>
-      © <span id="year"></span> | Maria Akumu |
-      Last Modified: <span id="lastModified"></span>
-    </p>
-  </footer>
+  I am a web development student studying Web Frontend Development with a strong interest in creating responsive, accessible, and user-friendly websites. I enjoy learning how to combine HTML, CSS, and JavaScript to build clean and functional web interfaces. Through this course, I am developing skills in modern web design principles, performance optimization, and best practices that prepare me for real-world web projects and collaborative development environments.
+</p>
+
+  </section>
+
+  <section>
+    <h2>Certificate Courses</h2>
+
+    <div class="filters">
+      <button id="all">All</button>
+      <button id="wdd">WDD</button>
+      <button id="cse">CSE</button>
+    </div>
+
+    <div id="courses"></div>
+    <p>Total Credits: <span id="credits">12</span></p>
+  </section>
+
+  <section>
+    <h2>Resources</h2>
+    <p>Helpful learning and development resources.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="https://github.com/" target="_blank">
+      <img src="images/github.svg" alt="GitHub">
+    </a>
+    <a href="https://linkedin.com/" target="_blank">
+      <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+  </div>
+
+  <p>
+    &copy; <span id="year"></span> Maria Akumu | Uganda
+  </p>
+
+  <p id="lastModified"></p>
+</footer>
 </body>
 </html>

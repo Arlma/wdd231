@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header img {
+  width: 40px;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+}
+
+.navigation a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.filters button {
+  margin: 0.25rem;
+}
+
+#courses {
+  display: grid;
+  gap: 1rem;
+}
+
+.course {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.completed {
+  background-color: #cce5ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #003366;
+  color: white;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 0.5rem;
+}

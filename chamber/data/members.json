@@ -1,0 +1,65 @@
+[
+  {
+    "name": "GreenTech Solutions",
+    "address": "123 Market Street",
+    "phone": "+256 701 111111",
+    "website": "https://greentech.com",
+    "image": "member1.jpg",
+    "membership": 3,
+    "description": "Renewable energy solutions provider."
+  },
+  {
+    "name": "City Bakery",
+    "address": "45 Baker Road",
+    "phone": "+256 702 222222",
+    "website": "https://citybakery.com",
+    "image": "member2.jpg",
+    "membership": 2,
+    "description": "Fresh bread and pastries daily."
+  },
+  {
+    "name": "Urban Fitness",
+    "address": "78 Fitness Ave",
+    "phone": "+256 703 333333",
+    "website": "https://urbanfitness.com",
+    "image": "member3.jpg",
+    "membership": 1,
+    "description": "Modern fitness center."
+  },
+  {
+    "name": "Bright Schools",
+    "address": "12 School Lane",
+    "phone": "+256 704 444444",
+    "website": "https://brightschools.com",
+    "image": "member4.jpg",
+    "membership": 3,
+    "description": "Private education services."
+  },
+  {
+    "name": "City Hardware",
+    "address": "90 Industrial Road",
+    "phone": "+256 705 555555",
+    "website": "https://cityhardware.com",
+    "image": "member5.jpg",
+    "membership": 2,
+    "description": "Construction materials supplier."
+  },
+  {
+    "name": "Digital Wave",
+    "address": "8 Innovation Park",
+    "phone": "+256 706 666666",
+    "website": "https://digitalwave.com",
+    "image": "member6.jpg",
+    "membership": 1,
+    "description": "Web and digital marketing agency."
+  },
+  {
+    "name": "Eco Farms",
+    "address": "Farm Road",
+    "phone": "+256 707 777777",
+    "website": "https://ecofarms.com",
+    "image": "member7.jpg",
+    "membership": 2,
+    "description": "Organic agricultural products."
+  }
+]

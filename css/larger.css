@@ -1,0 +1,15 @@
+@media (min-width: 700px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
