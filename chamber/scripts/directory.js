@@ -4,9 +4,15 @@ const listBtn = document.querySelector("#list");
 
 // Fetch members
 async function getMembers() {
-  const response = await fetch("data/members.json");
-  const data = await response.json();
-  displayMembers(data);
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const data = await response.json();
+    displayMembers(data);
+  } catch (error) {
+    console.error('Failed to load members.json:', error);
+    membersContainer.innerHTML = '<p>Unable to load member directory at this time.</p>';
+  }
 }
 
 function displayMembers(members) {
@@ -21,7 +27,7 @@ function displayMembers(members) {
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
       <p>${member.description}</p>
     `;
 

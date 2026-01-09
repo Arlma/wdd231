@@ -74,6 +74,15 @@ nav {
   padding: 1rem;
 }
 
+/* Hide images for the one-column list view (assignment requirement) */
+#members.list .member img {
+  display: none;
+}
+
+#members.list .member {
+  display: block;
+}
+
 .member {
   border: 1px solid #ccc;
   padding: 1rem;
