@@ -1,0 +1,69 @@
+/* Minimal normalize / reset rules to provide consistent base across browsers */
+/* Box sizing and core defaults */
+html {
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/* Remove default margin */
+body {
+	margin: 0;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Improve media element defaults */
+:where(img, picture, video, canvas, svg) {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Make forms inherit font settings */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Remove built-in heading margins */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Anchor defaults */
+a {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Accessible focus outline for keyboard users */
+:focus {
+	outline: 2px dashed #005fcc;
+	outline-offset: 2px;
+}
+
+/* Utility: visually hidden (for accessibility) */
+.visually-hidden {
+	position: absolute !important;
+	height: 1px; width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
