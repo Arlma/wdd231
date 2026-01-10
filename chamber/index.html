@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>City Chamber of Commerce | Home</title>
   <meta name="description" content="The City Chamber of Commerce supports local businesses, promotes community events, and drives economic growth.">
+  <meta name="author" content="Maria Akumu">
+
+  <!-- Favicon and Open Graph -->
+  <link rel="icon" href="images/logo.jpg">
+  <meta property="og:title" content="City Chamber of Commerce — Home">
+  <meta property="og:description" content="Discover local businesses, upcoming events, and community resources—join the City Chamber to grow your business and network.">
+  <meta property="og:image" content="https://arlma.github.io/wdd231/chamber/images/hero-large.jpg">
+  <meta property="og:url" content="https://arlma.github.io/wdd231/chamber/index.html">
+
+  <!-- Google Fonts preconnect + stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
@@ -13,6 +26,7 @@
   <!-- JavaScript -->
   <script src="scripts/weather.js" defer></script>
   <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/site.js" defer></script>
 </head>
 
 <body>
@@ -90,9 +104,7 @@
   </p>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<!-- year/lastModified moved to external JS -->
 
 </body>
 </html>
