@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join the Chamber | City Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the City Chamber of Commerce and connect your business with growth opportunities.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <h1>City Chamber of Commerce</h1>
+  </div>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PAGE INTRO -->
+  <section>
+    <h2>Join the Chamber</h2>
+    <p>
+      Become a member of the City Chamber of Commerce and gain access to
+      networking opportunities, business promotion, and community engagement.
+    </p>
+  </section>
+
+  <!-- JOIN FORM -->
+  <section class="join-form">
+    <h3>Membership Application</h3>
+
+    <form method="get" action="thankyou.html">
+      
+      <label>
+        First Name
+        <input type="text" name="fname" required>
+      </label>
+
+      <label>
+        Last Name
+        <input type="text" name="lname" required>
+      </label>
+
+      <label>
+        Title / Position
+        <input type="text" name="title" pattern="[A-Za-z\s\-]{7,}">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="example@email.com" required>
+      </label>
+
+      <label>
+        Mobile Phone
+        <input type="tel" name="phone" required>
+      </label>
+
+      <label>
+        Business / Organization Name
+        <input type="text" name="business" required>
+      </label>
+
+      <label>
+        Membership Level
+        <select name="membership">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description
+        <textarea name="description" rows="4"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" value="<?php echo date('c'); ?>">
+
+      <input type="submit" value="Submit Application" class="cta-button">
+    </form>
+  </section>
+
+  <!-- MEMBERSHIP BENEFITS -->
+  <section class="membership-benefits">
+    <h3>Membership Benefits</h3>
+
+    <ul>
+      <li><strong>NP:</strong> Community support and networking opportunities</li>
+      <li><strong>Bronze:</strong> Directory listing and event invitations</li>
+      <li><strong>Silver:</strong> Spotlight advertising and training workshops</li>
+      <li><strong>Gold:</strong> Homepage spotlights, premium advertising, and sponsorships</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    &copy; <span id="year"></span> City Chamber of Commerce |
+    All Rights Reserved
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
