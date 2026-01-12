@@ -3,9 +3,10 @@
   --primary-color: #004aad;
   --secondary-color: #f4f4f4;
   --accent-color: #f9a825;
-  --text-color: #222;
-  --max-width: 1200px;
+  --text-dark: #222;
+  --text-light: #ffffff;
 }
+
 
 
 /* ========================= RESET / NORMALIZE ========================= */
@@ -36,9 +37,10 @@ body {
 /* =========================
    HEADER & NAVIGATION
 ========================= */
-header {
-  background-color: var(--primary-color);
-  color: #fff;
+header{
+  color: var(--text-light);
+background-color: var(--primary-color);
+
 }
 
 .header-content {
@@ -47,10 +49,21 @@ header {
   padding: 1rem;
   text-align: center;
 }
-
-nav {
-  background-color: #00337a;
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--text-light);
+  background-color: var(--primary-color);
 }
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
 
 .navigation {
   list-style: none;
