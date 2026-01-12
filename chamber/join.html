@@ -11,8 +11,11 @@
 <!-- Open Graph -->
 <meta property="og:title" content="Join the City Chamber of Commerce">
 <meta property="og:description" content="Become a chamber member and grow your business through networking, training, advertising, and exclusive events.">
-<meta property="og:image" content="https://username.github.io/wdd231/chamber/images/chamber-og.jpg">
-<meta property="og:url" content="https://username.github.io/wdd231/chamber/join.html">
+<meta property="og:image" content="https://Arlma.github.io/wdd231/chamber/chamber-og.jpg">
+<meta property="og:url" content="https://Arlma.github.io/wdd231/chamber/join.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
@@ -63,7 +66,7 @@
 <label>
   Organization Title
   <input type="text" name="orgtitle"
-    title="Organizational Title"
+    title="The Arlma corporation"
     autocomplete="organization-title"
     pattern="[A-Za-z\s\-]{7,}">
 </label>
@@ -89,7 +92,7 @@
 <label>
   Organization Name
   <input type="text" name="business"
-    title="Business Name"
+    title="The Arlma Corporation"
     autocomplete="organization" required>
 </label>
       <label>
@@ -107,7 +110,8 @@
         <textarea name="description" rows="4"></textarea>
       </label>
 
-      <input type="hidden" name="timestamp" value="<?php echo date('c'); ?>">
+      <input type="hidden" name="timestamp" id="timestamp">
+
 
       <input type="submit" value="Submit Application" class="cta-button">
     </form>
