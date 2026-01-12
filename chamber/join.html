@@ -5,7 +5,14 @@
   <title>Join the Chamber | City Chamber of Commerce</title>
   <meta name="description" content="Apply to join the City Chamber of Commerce and connect your business with growth opportunities.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="author" content="AKUMU MARIA">
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.png">
+<!-- Open Graph -->
+<meta property="og:title" content="Join the City Chamber of Commerce">
+<meta property="og:description" content="Become a chamber member and grow your business through networking, training, advertising, and exclusive events.">
+<meta property="og:image" content="https://username.github.io/wdd231/chamber/images/chamber-og.jpg">
+<meta property="og:url" content="https://username.github.io/wdd231/chamber/join.html">
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
@@ -45,14 +52,21 @@
     <form method="get" action="thankyou.html">
       
       <label>
-        First Name
-        <input type="text" name="fname" required>
-      </label>
+  First Name
+  <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
+</label>
 
       <label>
-        Last Name
-        <input type="text" name="lname" required>
-      </label>
+  Last Name
+  <input type="text" name="lname" title="Last Name" autocomplete="family-name" required>
+</label>
+<label>
+  Organization Title
+  <input type="text" name="orgtitle"
+    title="Organizational Title"
+    autocomplete="organization-title"
+    pattern="[A-Za-z\s\-]{7,}">
+</label>
 
       <label>
         Title / Position
@@ -60,20 +74,24 @@
       </label>
 
       <label>
-        Email
-        <input type="email" name="email" placeholder="example@email.com" required>
-      </label>
-
-      <label>
-        Mobile Phone
-        <input type="tel" name="phone" required>
-      </label>
-
-      <label>
-        Business / Organization Name
-        <input type="text" name="business" required>
-      </label>
-
+  Email Address
+  <input type="email" name="email"
+    title="Email Address"
+    autocomplete="email"
+    placeholder="example@email.com" required>
+</label>
+<label>
+  Mobile Phone
+  <input type="tel" name="phone"
+    title="Mobile Phone"
+    autocomplete="tel" required>
+</label>
+<label>
+  Organization Name
+  <input type="text" name="business"
+    title="Business Name"
+    autocomplete="organization" required>
+</label>
       <label>
         Membership Level
         <select name="membership">
