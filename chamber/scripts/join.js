@@ -5,4 +5,3 @@ document.addEventListener("DOMContentLoaded", () => {
     timestampField.value = new Date().toISOString();
   }
 });
-
