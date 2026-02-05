@@ -46,5 +46,6 @@ export const places = [
     address: "Transport Terminal, Busia",
     description: "Central transport connection for the region.",
     image: "images/site8.webp"
+
   }
 ];
