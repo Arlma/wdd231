@@ -2,54 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Akumu Maria">
-  <meta name="description" content="Discover attractions and features of Busia District.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover | Busia Chamber of Commerce
-  <!-- Open Graph / Social Sharing -->
-<meta property="og:title" content="Discover Our City Through the Chamber of Commerce">
-<meta property="og:description" content="Discover local attractions, demographics, and economic features that highlight why our city is a great place to live, work, and grow.">
-<meta property="og:image" content="https://Arlma.github.io/wdd231/chamber/images/discover-og.jpg">
-<meta property="og:url" content="https://Arlma.github.io/wdd231/chamber/discover.html">
-</title>
 
+  <!-- SEO Meta -->
+  <meta name="author" content="Akumu Maria">
+  <meta name="description" content="Discover attractions, economy, culture, and key features of Busia District through the Chamber of Commerce discover page.">
+
+  <title>Discover Busia District | Chamber of Commerce</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover Busia District: Economy, Culture and Growth">
+  <meta property="og:description" content="Explore Busia District’s business opportunities, tourism attractions, demographics, and community features in this detailed chamber of commerce guide.">
+  <meta property="og:image" content="https://arlma.github.io/wdd231/chamber/images/discover-og.jpg">
+  <meta property="og:url" content="https://arlma.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
-  <link rel="icon" href="images/favicon.png">
-  <!-- Google Fonts Preconnect -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Google Fonts Stylesheet -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <!-- JavaScript -->
   <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Busia Chamber of Commerce</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="visit-message">
-  <h2>Visitor Information</h2>
-</section>
-<section class="cards" id="cards">
-  <h2>Discover Places</h2>
-</section>  
-  </main>
+<header>
+  <h1>Busia Chamber of Commerce</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Busia Chamber of Commerce</p>
-  </footer>
+<main>
+
+  <section id="visit-message">
+    <h2>Visitor Information</h2>
+    <p id="visitText"></p>
+  </section>
+
+  <section class="cards" id="cards">
+    <h2>Discover Places in Busia</h2>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Busia Chamber of Commerce</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
 </body>
 </html>

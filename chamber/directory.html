@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore members of the City Chamber of Commerce — discover local businesses, services, and resources supporting our community." />
-  <meta name="author" content="Maria Akumu" />
-  <title>Chamber Directory | City Chamber</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts preconnects and stylesheet -->
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore members of the City Chamber of Commerce, including local businesses, services, and resources that support the community.">
+  <meta name="author" content="Maria Akumu">
+
+  <title>Chamber Directory | City Chamber of Commerce</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <meta property="og:title" content="Discover Our City – Culture, Business, and Growth">
-  <meta property="og:url" content="https://yourdomain.com/discover.html">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="City Chamber of Commerce Member Directory">
+  <meta property="og:description" content="Discover local businesses, services, and organizations that are members of the City Chamber of Commerce and support the local community.">
+  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/logo.jpg">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png">
-
-  <!-- Facebook Open Graph Meta -->
-  <meta property="og:title" content="City Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore members of the City Chamber of Commerce — discover local businesses, services, and resources supporting our community.">
-  <meta property="og:image" content="images/logo.jpg">
-  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/chamber.css">
 
+  <!-- JavaScript -->
   <script defer src="scripts/directory.js"></script>
 </head>
+
 <body>
 
 <header>
-  <img src="images/logo.jpg" alt="Chamber Logo">
+  <img src="images/logo.jpg" alt="City Chamber of Commerce Logo">
   <h1>City Chamber of Commerce</h1>
 </header>
 
@@ -40,11 +45,12 @@
     <li><a class="active" href="directory.html">Directory</a></li>
     <li><a href="index.html">Home</a></li>
     <li><a href="join.html">Join</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
 <main>
+
   <section class="controls">
     <h2>View Options</h2>
     <p class="sr-only">Choose how to display the member directory.</p>
@@ -53,20 +59,20 @@
   </section>
 
   <section id="members" class="grid">
-    <h2>Members</h2>
+    <h2>Chamber Members</h2>
   </section>
 
   <section class="about-directory">
     <h2>About This Directory</h2>
-    <p>This directory lists local chamber members including contact details, membership level, and website links. Use the view options above to switch between card and list layouts.</p>
+    <p>This directory lists local chamber members including their contact details, membership level, and website links. Use the buttons above to switch between grid and list views.</p>
   </section>
+
 </main>
 
 <footer>
-  <p>Contact: info@citychamber.org | +256 776419594</p>
+  <p>Contact: info@citychamber.org | +256 776 419 594</p>
   <p>
-    © <span id="year"></span> | Maria Akumu | WDD 231  
-    <br>
+    © <span id="year"></span> | Maria Akumu | WDD 231 <br>
     Last Modified: <span id="lastModified"></span>
   </p>
 </footer>
