@@ -39,7 +39,8 @@
 
 <header>
   <h1>Busia Chamber of Commerce</h1>
-  <nav>
+  <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+  <nav id="main-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="discover.html">Discover</a></li>
@@ -66,6 +67,16 @@
   <p>© <span id="year"></span> Busia Chamber of Commerce</p>
   <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
+
+<script>
+  // Responsive navigation toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
