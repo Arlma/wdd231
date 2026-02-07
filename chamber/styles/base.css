@@ -54,13 +54,11 @@ nav a {
     "card8";
 }
 
-.card {
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 8px;
+.cards {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
+
