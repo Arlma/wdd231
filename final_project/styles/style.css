@@ -71,7 +71,7 @@ nav a:focus {
 }
 
 nav a.active {
-  background: rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.2);
   border-bottom: 3px solid white;
   font-weight: bold;
 }
