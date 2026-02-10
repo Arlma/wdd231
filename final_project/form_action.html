@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Akumu Maria">
+<meta name="description" content="Form submission results and confirmation">
+<meta name="keywords" content="form submission, confirmation, thank you, message sent">
+<meta property="og:title" content="Form Submission Confirmation">
+<meta property="og:description" content="Thank you for submitting your message">
+<meta property="og:image" content="images/contact-bg.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Submission</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Form Submitted Successfully</h1>
+  
+  <button id="menu-btn" aria-label="Open Menu">☰</button>
+  
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="opportunities.html">Opportunities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="results"></main>
+
+<footer>
+  <p>© 2026 Akumu Maria</p>
+  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" title="Project demonstration video">Project Video</a> | <a href="attributions.html">Attributions</a>
+</footer>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.querySelector("#results").innerHTML = `
+  <h2>Thank You, ${params.get("name")}!</h2>
+  <p><strong>Email:</strong> ${params.get("email")}</p>
+  <p><strong>Message:</strong> ${params.get("message")}</p>
+  <p><a href="index.html">Return to Home</a></p>
+`;
+
+// Add mobile menu toggle
+const menuBtn = document.querySelector("#menu-btn");
+const nav = document.querySelector("#nav");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>

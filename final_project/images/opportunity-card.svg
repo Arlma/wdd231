@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f5f5f5" stroke="#ddd" stroke-width="2" rx="8"/>
+  <circle cx="100" cy="80" r="50" fill="#003366"/>
+  <text x="100" y="90" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">✓</text>
+  <rect x="20" y="150" width="360" height="30" fill="#004d99" rx="4"/>
+  <text x="200" y="172" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Scholarship Opportunity</text>
+  <text x="20" y="220" font-family="Arial, sans-serif" font-size="12" fill="#666">Organization: Global Foundation</text>
+  <text x="20" y="240" font-family="Arial, sans-serif" font-size="12" fill="#666">Country: Global</text>
+  <text x="20" y="260" font-family="Arial, sans-serif" font-size="12" fill="#666">Deadline: 2026-05-15</text>
+</svg>

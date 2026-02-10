@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <rect width="1200" height="300" fill="#003366"/>
+  <circle cx="150" cy="100" r="60" fill="#004d99" opacity="0.5"/>
+  <circle cx="1050" cy="200" r="80" fill="#004d99" opacity="0.3"/>
+  <path d="M 600,50 L 650,150 L 600,200 L 550,150 Z" fill="#00ccff" opacity="0.6"/>
+  <text x="600" y="160" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="white" text-anchor="middle">Get In Touch</text>
+</svg>

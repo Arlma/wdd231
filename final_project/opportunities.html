@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Akumu Maria">
+<meta name="description" content="Scholarships and internships opportunities for students">
+<meta name="keywords" content="scholarships, internships, opportunities, education, funding, global">
+<meta property="og:title" content="Student Opportunities">
+<meta property="og:description" content="Find scholarships and internships for students">
+<meta property="og:image" content="images/opportunities-preview.jpg">
+<meta property="og:url" content="https://example.com/opportunities.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Opportunities</title>
+
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Student Opportunities</h1>
+
+  <button id="menu-btn">☰</button>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="opportunities.html" class="active">Opportunities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Available Scholarships & Internships</h2>
+  <img src="images/opportunity-card.svg" alt="Scholarship and internship opportunities" loading="lazy" width="400" height="300" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto;">
+
+  <!-- Dynamic opportunities will appear here -->
+  <section id="opportunity-list"></section>
+</main>
+
+<!-- MODAL DIALOG -->
+<div id="modal" hidden>
+  <div id="modal-content">
+    <span id="close-modal">X</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-org"></p>
+    <p id="modal-country"></p>
+    <p id="modal-deadline"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Akumu Maria</p>
+  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" title="Project demonstration video">Project Video</a> | <a href="attributions.html">Attributions</a>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
